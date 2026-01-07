@@ -20,6 +20,16 @@ I use modern AI tools like GitHub Copilot in my daily work, which helps speed up
 
 My specialties is Asp.Net full-stack software engineer.
 
+## Education
+
+### Dnipro University of Technology (NTU DP)
+**Bachelor's degree in Computer Science**  
+*2000 - 2004*
+
+### Dnipro University of Technology (NTU DP)
+**Master's program (not completed)**  
+*2004 - 2005*
+
 ## Languages
 
 - English, B2
