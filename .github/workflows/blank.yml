@@ -20,4 +20,6 @@ jobs:
         run: curl -fsSL https://gh.io/copilot-install | bash
 
       - name: Update readme.md
-        run: copilot -p "update readme.md according on data in data.yaml" --allow-all-tools
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: copilot -p "update readme.md according on datain data.yaml" --allow-all-tools
