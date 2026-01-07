@@ -21,5 +21,5 @@ jobs:
 
       - name: Update readme.md
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.COPILOT_GITHUB_TOKEN }}
         run: copilot -p "update readme.md according on datain data.yaml" --allow-all-tools
