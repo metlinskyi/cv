@@ -19,7 +19,10 @@ jobs:
       - name: Install GitHub Copilot CLI
         run: curl -fsSL https://gh.io/copilot-install | bash
 
-      - name: Update readme.md
+      - name: Install wkhtmltopdf
+        run: sudo apt-get install wkhtmltopdf
+
+      - name: Update readme.md and index.html
         env:
           GH_TOKEN: ${{ secrets.COPILOT_GITHUB_TOKEN }}
-        run: copilot -p "update readme.md according on datain data.yaml" --allow-all-tools
+        run: ./update.sh

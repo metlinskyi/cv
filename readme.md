@@ -2,7 +2,7 @@
 
 **Senior Software Engineer**  
 📍 Brno, Czech Republic  
-📧 cv@metlinskyi.com
+📧 send_your_offers_here@metlinskyi.com
 
 ## About
 

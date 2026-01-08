@@ -1,18 +1,18 @@
+
 person:
   givenName:  Roman 
   familyName: Metlinskyi
   jobTitle: Senior Software Engineer
   address: Brno, Czech Republic
-  email:  job@metlinskyi.com
+  email:  send_your_offers_here@metlinskyi.com
 
 education:
   - institution: Dnipro University of Technology (NTU DP)
-    degree: Bachelor's degree in Computer Science
-    period: 2000 - 2004
-
-  - institution: Dnipro University of Technology (NTU DP)
-    degree: Master's program (not completed)
-    period: 2004 - 2005
+    degrees: 
+      - name: Bachelor's degree in Computer Science
+        period: 2000 - 2004
+      - name: Master's program (not completed)
+        period: 2004 - 2005
 
 languages:
   - English, B2
