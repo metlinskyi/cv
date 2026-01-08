@@ -20,22 +20,6 @@ I use modern AI tools like GitHub Copilot in my daily work, which helps speed up
 
 My specialties is Asp.Net full-stack software engineer.
 
-## Education
-
-### Dnipro University of Technology (NTU DP)
-**Bachelor's degree in Computer Science**  
-*2000 - 2004*
-
-**Master's program (not completed)**  
-*2004 - 2005*
-
-## Languages
-
-- English, B2
-- Czech, B1
-- Ukrainian, Native
-- Russian, Native
-
 ## Experience
 
 ### Barclays
@@ -79,3 +63,19 @@ My position was senior .NET developer. I'm involved in developing two projects r
 📍 Dnipro, Ukraine
 
 My position was senior ASP.NET developer. My general responsibilities were optimization performance in ASP.NET MVC application and reports building, front-end architecture improving, and mentoring for junior developers in our team. I was improving experience in C Sharp (C#), ASP.NET MVC, DevExpress, Windows Forms, JavaScript, Backbone. Also, I was getting new experience with MongoDB.
+
+## Education
+
+### Dnipro University of Technology (NTU DP)
+**Bachelor's degree in Computer Science**  
+*2000 - 2004*
+
+**Master's program (not completed)**  
+*2004 - 2005*
+
+## Languages
+
+- English, B2
+- Czech, B1
+- Ukrainian, Native
+- Russian, Native
