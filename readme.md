@@ -25,6 +25,7 @@ My specialties is Asp.Net full-stack software engineer.
 ### Dnipro University of Technology (NTU DP)
 **Bachelor's degree in Computer Science**  
 *2000 - 2004*
+
 **Master's program (not completed)**  
 *2004 - 2005*
 
