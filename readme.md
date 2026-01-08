@@ -4,7 +4,7 @@
 📍 Brno, Czech Republic  
 📧 send_your_offers_here@metlinskyi.com
 
-## About
+## 
 
 Hello, World! I am a software engineer.
 
