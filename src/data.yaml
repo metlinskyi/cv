@@ -1,24 +1,9 @@
-
 person:
   givenName:  Roman 
   familyName: Metlinskyi
   jobTitle: Senior Software Engineer
   address: Brno, Czech Republic
   email:  send_your_offers_here@metlinskyi.com
-
-education:
-  - institution: Dnipro University of Technology (NTU DP)
-    degrees: 
-      - name: Bachelor's degree in Computer Science
-        period: 2000 - 2004
-      - name: Master's program (not completed)
-        period: 2004 - 2005
-
-languages:
-  - English, B2
-  - Czech, B1
-  - Ukrainian, Native
-  - Russian, Native
 
 about: >
   Hello, World! I am a software engineer.
@@ -86,3 +71,17 @@ experience:
       My position was senior ASP.NET developer. 
       My general responsibilities were optimization performance in ASP.NET MVC application and reports building, front-end architecture improving, and mentoring for junior developers in our team.
       I was improving experience in C Sharp (C#), ASP.NET MVC, DevExpress, Windows Forms, JavaScript, Backbone. Also, I was getting new experience with MongoDB.
+
+education:
+  - institution: Dnipro University of Technology (NTU DP)
+    degrees: 
+      - name: Bachelor's degree in Computer Science
+        period: 2000 - 2004
+      - name: Master's program (not completed)
+        period: 2004 - 2005
+
+languages:
+  - English, B2
+  - Czech, B1
+  - Ukrainian, Native
+  - Russian, Native
