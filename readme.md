@@ -1,17 +1,22 @@
 # Roman Metlinskyi
 
 **Senior Software Engineer** 
-
 📍 Brno, Czech Republic  
 📧 send_your_offers_here@metlinskyi.com
 
 ## 
 Hello, World! I am a software engineer.
+
 I graduated from Dnipro University of Technology (NTU DP) with a Bachelor's degree in Computer Science in 2004. I began a Master's program but left midway after receiving a job offer, as gaining real-world experience became my priority. 
+
 I started my career at a small company as a C++ programmer. Due to strong demand for web developers, I expanded my skill set into web technologies and have since grown into a successful ASP.NET full-stack software engineer.
+
 I have wide experience with a variety of technologies and stacks, including ASP.NET, ASP.NET Core, SQL, JavaScript, HTML/CSS, and Docker. My primary programming languages are C# and TypeScript, and I also enjoy working with Python and C++.
+
 I have over 20 years of experience working as a software engineer with ASP.NET technologies. I have strong front-end skills, including JavaScript and TypeScript, and hands-on experience with frameworks such as Angular and React. The HTML and CSS I write follow W3C standards.
+
 I use modern AI tools like GitHub Copilot in my daily work, which helps speed up routine tasks and gives me more time to focus on finding the best solutions.
+
 My specialties is Asp.Net full-stack software engineer.
 
 ## Experience
@@ -82,11 +87,10 @@ I was improving experience in C Sharp (C#), ASP.NET MVC, DevExpress, Windows For
 ## Education
 
 ### Dnipro University of Technology (NTU DP)
-- **Bachelor's degree in Computer Science**, *2000 - 2004*
-- **Master's program (not completed)**, *2004 - 2005*
+- *Bachelor's degree in Computer Science*, 2000 - 2004
+- *Master's program (not completed)*, 2004 - 2005
 
 ## Languages
-
 - English, B2
 - Czech, B1
 - Ukrainian, Native
