@@ -4,6 +4,9 @@ person:
   jobTitle: Senior Software Engineer
   address: Brno, Czech Republic
   email:  send_your_offers_here@metlinskyi.com
+  urls:
+    github:   https://github.com/metlinskyi
+    linkedin: https://www.linkedin.com/in/metlinskyi
 
 about: >
   Hello, World! I am a software engineer.

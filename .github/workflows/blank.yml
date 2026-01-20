@@ -4,9 +4,6 @@ on:
   push:
     branches: [ "main" ]
     paths: ['data.yaml']
-  pull_request:
-    branches: [ "main" ]
-    paths: ['data.yaml']
 
   workflow_dispatch:
 
@@ -22,7 +19,7 @@ jobs:
       - name: Install wkhtmltopdf
         run: sudo apt-get install wkhtmltopdf
 
-      - name: Update readme.md and index.html
+      - name: Update readme.md, index.html, and PDF
         env:
           GH_TOKEN: ${{ secrets.COPILOT_GITHUB_TOKEN }}
-        run: ./update.sh
+        run: ./generate.sh
