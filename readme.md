@@ -1,6 +1,7 @@
 # Roman Metlinskyi
 
 **Senior Software Engineer** 
+
 📍 Brno, Czech Republic  
 📧 send_your_offers_here@metlinskyi.com
 
