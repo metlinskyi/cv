@@ -5,181 +5,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roman Metlinskyi - Senior Software Engineer</title>
     <style>
-        /* PDF-friendly CSS */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        @page {
-            size: A4;
-            margin: 1cm;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 11pt;
+            line-height: 1.4;
+            color: #333;
+            background: #fff;
+            /*max-width: 210mm;*/
+            margin: 0 auto;
+            padding: 15mm;
         }
 
+        /* PDF print optimization */
         @media print {
             body {
                 margin: 0;
-                padding: 0;
+                padding: 15mm;
             }
-            .cv {
-                page-break-inside: avoid;
-            }
-            a {
-                text-decoration: none;
-                color: #0066cc;
-            }
+
         }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #fff;
-            max-width: 21cm;
-            margin: 0 auto;
-            padding: 20px;
+        @page {
+            size: A4;
+            margin: 0;
         }
 
         .cv {
-            background: white;
+            width: 100%;
         }
 
         header.person {
-            border-bottom: 2px solid #0066cc;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
         }
 
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            color: #0066cc;
+        header.person h1 {
+            font-size: 26pt;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #222;
         }
 
         .givenName {
-            font-weight: 300;
-        }
-
-        .familyName {
-            font-weight: 700;
-            margin-left: 8px;
+            margin-right: 8px;
         }
 
         .jobTitle {
-            font-size: 1.3em;
+            font-size: 12pt;
             color: #555;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
+            font-weight: 500;
         }
 
         .contact-info {
             display: flex;
-            flex-wrap: wrap;
             gap: 20px;
-            margin-top: 15px;
+            flex-wrap: wrap;
+            font-size: 10pt;
         }
 
         .contact-info label {
             display: flex;
             align-items: center;
-            gap: 8px;
-            font-size: 0.95em;
+            gap: 5px;
         }
 
         .contact-info svg {
-            width: 16px;
-            height: 16px;
-            fill: #0066cc;
+            width: 14px;
+            height: 14px;
+            fill: #555;
         }
 
         section {
-            margin-bottom: 30px;
-            page-break-inside: avoid;
+            margin-bottom: 15px;
         }
 
         h2 {
-            font-size: 1.8em;
-            color: #0066cc;
-            margin-bottom: 15px;
+            font-size: 16pt;
+            color: #222;
+            margin-bottom: 12px;
             border-bottom: 1px solid #ddd;
-            padding-bottom: 8px;
+            padding-bottom: 5px;
         }
 
         h3 {
-            font-size: 1.2em;
+            font-size: 10pt;
             color: #333;
-            margin-bottom: 8px;
+            margin-bottom: 5px;
+            font-weight: 600;
         }
 
         h4 {
-            font-size: 1.3em;
-            color: #0066cc;
+            font-size: 13pt;
+            color: #222;
             margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
         }
 
         .about {
+            font-size: 10pt;
+            line-height: 1.25;
+            color: #333;
             text-align: justify;
-            margin-bottom: 20px;
-            line-height: 1.8;
         }
 
         .about p {
-            margin-bottom: 12px;
-        }
-
-        /* Highlight technical skills with gray shade */
-        .about .tech-skill,
-        .description .tech-skill {
-            background-color: #f0f0f0;
-            padding: 2px 4px;
-            border-radius: 3px;
-            color: #555;
-        }
-
-        ul.experience,
-        ul.education {
-            list-style: none;
-        }
-
-        ul.experience > li,
-        ul.education > li {
-            margin-bottom: 25px;
-            padding-left: 0;
-        }
-
-        .period {
-            color: #666;
-            font-size: 0.9em;
-            margin-bottom: 5px;
-        }
-
-        .location {
-            color: #666;
-            font-size: 0.9em;
             margin-bottom: 10px;
         }
 
-        .description {
-            text-align: justify;
-            line-height: 1.7;
+        .about p:last-child {
+            margin-bottom: 0;
         }
 
-        .degrees {
+        /* Technical skills highlighting */
+        .tech-skill {
+            color: #666;
+        }
+
+        ul.experience, ul.education {
             list-style: none;
-            margin-top: 10px;
         }
 
-        .degrees li {
+        ul.experience > li {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        ul.experience > li:last-child {
+            border-bottom: none;
+        }
+
+        ul.experience .title {
+            font-weight: 600;
+        }
+
+        ul.experience .company {
+            font-weight: 600;
+            color: #555;
+        }
+
+        ul.experience .period {
+            font-size: 9pt;
+            color: #666;
+            margin-top: 3px;
+        }
+
+        ul.experience .location {
+            font-size: 9pt;
+            color: #666;
             margin-bottom: 8px;
-            padding-left: 20px;
-            position: relative;
         }
 
-        .degrees li:before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: #0066cc;
+        ul.experience .description {
+            font-size: 10pt;
+            line-height: 1.25;
+            color: #333;
+            text-align: justify;
+        }
+
+        ul.education > li {
+            margin-bottom: 12px;
+        }
+
+        ul.degrees {
+            list-style: none;
+            margin-top: 5px;
+            margin-left: 0;
+        }
+
+        ul.degrees li {
+            font-size: 10pt;
+            color: #555;
+            margin-bottom: 3px;
         }
 
         ul.languages {
@@ -190,23 +196,14 @@
         }
 
         ul.languages li {
-            background-color: #f5f5f5;
-            padding: 8px 15px;
-            border-radius: 5px;
-            font-size: 0.95em;
+            font-size: 10pt;
+            color: #555;
         }
 
         .hint {
-            font-size: 0.9em;
-            color: #666;
+            font-size: 9pt;
+            color: #888;
             font-style: italic;
-        }
-
-        footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            text-align: center;
         }
 
         a {
@@ -218,14 +215,11 @@
             text-decoration: underline;
         }
 
-        /* Print optimization */
-        @media print {
-            body {
-                padding: 0;
-            }
-            .cv {
-                max-width: 100%;
-            }
+        footer {
+            margin-top: 0px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+            text-align: center;
         }
     </style>
 </head>
@@ -236,24 +230,20 @@
             <div class="jobTitle">Senior Software Engineer</div>
             <div class="contact-info">
                 <label>
-                    <svg id="location" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    <svg id="location" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                     <span class="address">Brno, Czech Republic</span>
-                </label>
+                </label>&nbsp;&nbsp;&nbsp;&nbsp;
                 <label>
-                    <svg id="email" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    <svg id="email" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                     <span class="email">send_your_offers_here@metlinskyi.com</span>
                 </label>
             </div>
         </header>
         <section>
             <div class="about">
-<p>Hello, World! I am a software engineer.</p>
-<p>I graduated from Dnipro University of Technology (NTU DP) with a Bachelor's degree in <span class="tech-skill">Computer Science</span> in 2004. I began a Master's program but left midway after receiving a job offer, as gaining real-world experience became my priority.</p>
-<p>I started my career at a small company as a <span class="tech-skill">C++</span> programmer. Due to strong demand for web developers, I expanded my skill set into web technologies and have since grown into a successful <span class="tech-skill">ASP.NET</span> full-stack software engineer.</p>
-<p>I have wide experience with a variety of technologies and stacks, including <span class="tech-skill">ASP.NET</span>, <span class="tech-skill">ASP.NET Core</span>, <span class="tech-skill">SQL</span>, <span class="tech-skill">JavaScript</span>, <span class="tech-skill">HTML/CSS</span>, and <span class="tech-skill">Docker</span>. My primary programming languages are <span class="tech-skill">C#</span> and <span class="tech-skill">TypeScript</span>, and I also enjoy working with <span class="tech-skill">Python</span> and <span class="tech-skill">C++</span>.</p>
-<p>I have over 20 years of experience working as a software engineer with <span class="tech-skill">ASP.NET</span> technologies. I have strong front-end skills, including <span class="tech-skill">JavaScript</span> and <span class="tech-skill">TypeScript</span>, and hands-on experience with frameworks such as <span class="tech-skill">Angular</span> and <span class="tech-skill">React</span>. The <span class="tech-skill">HTML</span> and <span class="tech-skill">CSS</span> I write follow W3C standards.</p>
-<p>I use modern AI tools like <span class="tech-skill">GitHub Copilot</span> in my daily work, which helps speed up routine tasks and gives me more time to focus on finding the best solutions.</p>
-<p>My specialties is <span class="tech-skill">Asp.Net</span> full-stack software engineer.</p>
+<p>Hello, World! I am a full-stack software engineer specializing in <span class="tech-skill">ASP.NET</span>.</p>
+<p>I have broad experience across multiple technologies, including <span class="tech-skill">.NET Framework</span>, <span class="tech-skill">.NET Core</span>, <span class="tech-skill">SQL</span>/<span class="tech-skill">NoSQL</span>, <span class="tech-skill">JS</span>/<span class="tech-skill">TS</span>, <span class="tech-skill">HTML/CSS</span>, and <span class="tech-skill">Docker</span>. My primary programming language is <span class="tech-skill">C#</span>, and I also enjoy working with <span class="tech-skill">Python</span> and <span class="tech-skill">C++</span>.</p>
+<p>I have strong front-end skills with <span class="tech-skill">JavaScript</span> and <span class="tech-skill">TypeScript</span>, and hands-on experience with frameworks such as <span class="tech-skill">Angular</span> and <span class="tech-skill">React</span>. I leverage modern AI tools like <span class="tech-skill">GitHub Copilot</span> to accelerate routine tasks and focus on designing optimal solutions.</p>
             </div>
         </section>
         <section>
@@ -262,14 +252,14 @@
                 <li>
                     <h3><span class="title">Senior Csharp Developer, AVP</span> at <span class="company">Barclays</span></h3>
                     <div class="period">Feb 2021 - Apr 2024, 3 yrs 3 mos</div>
-                    <div class="location">Prague, Czech Republic</div>
-                    <div class="description">During my time at Barclays, I contributed to three projects. Two focused on marketing data processing: the first was an <span class="tech-skill">Excel Add-In</span> (<span class="tech-skill">C#</span>, <span class="tech-skill">VBA</span>), and the second a <span class="tech-skill">WPF</span> application (<span class="tech-skill">C#</span>), both emphasizing data visualization. The third project was an internal web tool (<span class="tech-skill">C#</span>, <span class="tech-skill">TypeScript</span>, <span class="tech-skill">Angular</span>) for managing, snapshotting, rolling back, and recovering data.</div>
+                    <spa class="location">Prague, Czech Republic</div>
+                    <div class="description">Contributed to three Barclays projects: Developed an <span class="tech-skill">Excel Add-In</span> (<span class="tech-skill">C#</span>/<span class="tech-skill">VBA</span>) and <span class="tech-skill">WPF</span> app (<span class="tech-skill">C#</span>) for marketing data visualization. Built a <span class="tech-skill">C#</span>, <span class="tech-skill">TypeScript</span>, <span class="tech-skill">Angular</span> web tool for data management, snapshotting, rollback, and recovery.</div>
                 </li>
                 <li>
                     <h3><span class="title">Senior Analyst Developer</span> at <span class="company">FNZ Group</span></h3>
                     <div class="period">Nov 2019 - Jan 2021, 1 yr 3 mos</div>
                     <div class="location">Brno, Czech Republic</div>
-                    <div class="description">Analyst developers at FNZ are all-rounders who analyse required system changes, design databases (<span class="tech-skill">MSSQL</span>), write complex financial business logic and create slick web applications (<span class="tech-skill">C#</span>/<span class="tech-skill">VB</span>, <span class="tech-skill">Asp.Net MVC</span>, <span class="tech-skill">React</span>). They also work closely with analyst testers and other members of the project team to produce world class software. Analyst developers will be expected to learn all about our application, the business and the industry we operate in.</div>
+                    <div class="description">As an Analyst Developer, I led system analysis, database design (<span class="tech-skill">MS SQL</span>), and the development of complex financial business logic, delivering modern web applications using <span class="tech-skill">C#</span>/<span class="tech-skill">VB</span>, <span class="tech-skill">ASP.NET MVC</span>, and <span class="tech-skill">React</span>. I partnered closely with QA analysts and cross-functional teams to produce world-class software solutions.</div>
                 </li>
                 <li>
                     <h3><span class="title">Team Lead</span> at <span class="company">SoftServe</span></h3>
@@ -281,18 +271,18 @@
                     <h3><span class="title">Senior Software Engineer</span> at <span class="company">Moneyveo</span></h3>
                     <div class="period">Jan 2018 - Apr 2019, 1 yr 4 mos</div>
                     <div class="location">Kyiv, Ukraine</div>
-                    <div class="description">My position was a senior <span class="tech-skill">.NET</span> engineer. My responsibilities were solving different challenges tasks, such as improving new business features, refactoring and support legacy code, collect big data under a high-load system. <span class="tech-skill">SOLID</span> and <span class="tech-skill">Unit Tests</span> covering (<span class="tech-skill">NUnit</span>) are helping me to solve everyday challenges. <span class="tech-skill">IoC</span> container allows me to make solutions more flexible. A code review process is giving me an information regarding improvements in my decision. Daily meetings and retrospectives allowing to keep in touch with a team. In a development process, I use a scope of technologies: <span class="tech-skill">C-Sharp (C# 7)</span>, <span class="tech-skill">ASP.NET MVC</span> and <span class="tech-skill">Web API 2</span> frameworks, <span class="tech-skill">Autofac</span>, <span class="tech-skill">NHibernate ORM</span>, message broker <span class="tech-skill">RabbitMQ</span>, <span class="tech-skill">SQL server 2014/17</span>, <span class="tech-skill">Docker</span>, <span class="tech-skill">Mercurial</span>, <span class="tech-skill">Jira</span>.</div>
+                    <div class="description">Addressed diverse technical challenges, including implementing new features, refactoring legacy code, and processing high-volume data in high-load systems. Applied <span class="tech-skill">SOLID principles</span>, unit testing (<span class="tech-skill">NUnit</span>), and <span class="tech-skill">IoC containers</span> to build flexible, maintainable solutions. Worked with <span class="tech-skill">C#</span> (<span class="tech-skill">C# 7</span>), <span class="tech-skill">ASP.NET MVC</span>, <span class="tech-skill">Web API 2</span>, <span class="tech-skill">Autofac</span>, <span class="tech-skill">NHibernate</span>, <span class="tech-skill">RabbitMQ</span>, <span class="tech-skill">SQL Server 2014/2017</span>, <span class="tech-skill">Docker</span>, <span class="tech-skill">Mercurial</span>, and <span class="tech-skill">Jira</span>.</div>
                 </li>
                 <li>
                     <h3><span class="title">Senior Software Engineer</span> at <span class="company">PreciseQ</span></h3>
                     <div class="period">Jan 2016 - Dec 2017, 2 yrs</div>
                     <div class="location">Kyiv, Ukraine</div>
-                    <div class="description">My position was senior <span class="tech-skill">.NET</span> developer. I'm involved in developing two projects related with the US real estate. My general responsibilities are solving issues for the new project version and support the current project. There are using technologies such as <span class="tech-skill">C Sharp (C#)</span>, <span class="tech-skill">Visual Basic (VB.NET)</span>, <span class="tech-skill">ASP.NET MVC</span>, <span class="tech-skill">Entity Framework</span>, <span class="tech-skill">Transact-SQL</span>, <span class="tech-skill">Windows Service</span>, <span class="tech-skill">Windows Communication Foundation (WCF)</span>, <span class="tech-skill">Angular</span>, <span class="tech-skill">Unit testing (MSTest)</span>.</div>
+                    <div class="description">Developed and maintained two U.S. real estate–focused applications. Resolved issues for new releases and provided ongoing support for existing systems. Utilized <span class="tech-skill">C#</span>, <span class="tech-skill">VB.NET</span>, <span class="tech-skill">ASP.NET MVC</span>, <span class="tech-skill">Entity Framework</span>, <span class="tech-skill">T-SQL</span>, <span class="tech-skill">WCF</span>, <span class="tech-skill">Windows Services</span>, <span class="tech-skill">Angular</span>, and <span class="tech-skill">MSTest</span>.</div>
                 </li>
             </ul>
-            <div>
-                <span class="hint">Other my experience you can find on my LinkedIn <a href="https://www.linkedin.com/in/metlinskyi" class="urls">https://www.linkedin.com/in/metlinskyi</a></span>
-            </div>
+            <footer>
+                <span class="hint">You can find my other experience on my LinkedIn profile <a href="https://www.linkedin.com/in/metlinskyi" class="urls">linkedin.com/in/metlinskyi</a></span>
+            </footer>
         </section>
         <section>
             <h2>Education</h2>
@@ -313,15 +303,12 @@
         <section>
            <h4>Languages</h4>
            <ul class="languages">
-                <li>English, B2</li>
-                <li>Czech, B1</li>
-                <li>Ukrainian, Native</li>
-                <li>Russian, Native</li>
+                <li>English B2</li>,&nbsp;&nbsp;
+                <li>Czech B1</li>,&nbsp;&nbsp;
+                <li>Ukrainian Native</li>,&nbsp;&nbsp;
+                <li>Russian Native</li>
            </ul>
         </section>
-        <footer>
-            <span class="hint">This CV was generated by GitHub Copilot, you can found source code on my GitHub <a class="urls" href="https://github.com/metlinskyi/cv">https://github.com/metlinskyi/cv</a>.</span>
-        </footer>            
     </main>
 </body>
 </html>

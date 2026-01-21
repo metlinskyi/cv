@@ -9,13 +9,10 @@ person:
     linkedin: https://www.linkedin.com/in/metlinskyi
 
 about: >
-  Hello, World! I am a software engineer.
-  I graduated from Dnipro University of Technology (NTU DP) with a Bachelor's degree in Computer Science in 2004. I began a Master’s program but left midway after receiving a job offer, as gaining real-world experience became my priority. 
-  I started my career at a small company as a C++ programmer. Due to strong demand for web developers, I expanded my skill set into web technologies and have since grown into a successful ASP.NET full-stack software engineer.
-  I have wide experience with a variety of technologies and stacks, including ASP.NET, ASP.NET Core, SQL, JavaScript, HTML/CSS, and Docker. My primary programming languages are C# and TypeScript, and I also enjoy working with Python and C++.
-  I have over 20 years of experience working as a software engineer with ASP.NET technologies. I have strong front-end skills, including JavaScript and TypeScript, and hands-on experience with frameworks such as Angular and React. The HTML and CSS I write follow W3C standards.
-  I use modern AI tools like GitHub Copilot in my daily work, which helps speed up routine tasks and gives me more time to focus on finding the best solutions.
-  My specialties is Asp.Net full-stack software engineer.
+  Hello, World! I am a full-stack software engineer specializing in ASP.NET. 
+  I have broad experience across multiple technologies, including .NET Framework, .NET Core, SQL/NoSQL, JS/TS, HTML/CSS, and Docker. My primary programming language is C#, and I also enjoy working with Python and C++.
+  I have strong front-end skills with JavaScript and TypeScript, and hands-on experience with frameworks such as Angular and React. 
+  I leverage modern AI tools like GitHub Copilot to accelerate routine tasks and focus on designing optimal solutions.
 
 experience:
   - company: Barclays
@@ -23,19 +20,18 @@ experience:
     period: Feb 2021 - Apr 2024, 3 yrs 3 mos
     location: Prague, Czech Republic
     description: >
-      During my time at Barclays, I contributed to three projects. 
-      Two focused on marketing data processing: the first was an Excel Add-In (C#, VBA), and the second a WPF application (C#), both emphasizing data visualization. 
-      The third project was an internal web tool (C#, TypeScript, Angular) for managing, snapshotting, rolling back, and recovering data.
+      Contributed to three Barclays projects:
+      Developed an Excel Add-In (C#/VBA) and WPF app (C#) for marketing data visualization.
+      Built a C#, TypeScript, Angular web tool for data management, snapshotting, rollback, and recovery.
 
   - company: FNZ Group
     title: Senior Analyst Developer
     period: Nov 2019 - Jan 2021, 1 yr 3 mos
     location: Brno, Czech Republic
     description: >
-      Analyst developers at FNZ are all-rounders who analyse required system changes, design databases (MSSQL), write complex financial business logic and create slick web applications (C#/VB, Asp.Net MVC, React). 
-      They also work closely with analyst testers and other members of the project team to produce world class software. 
-      Analyst developers will be expected to learn all about our application, the business and the industry we operate in.
-
+      As an Analyst Developer, I led system analysis, database design (MS SQL), and the development of complex financial business logic, delivering modern web applications using C#/VB, ASP.NET MVC, and React. 
+      I partnered closely with QA analysts and cross-functional teams to produce world-class software solutions.
+ 
   - company: SoftServe
     title: Team Lead
     period: May 2019 - Dec 2019, 8 mos
@@ -50,30 +46,26 @@ experience:
     period: Jan 2018 - Apr 2019, 1 yr 4 mos
     location: Kyiv, Ukraine
     description: >
-      My position was a senior .NET engineer. 
-      My responsibilities were solving different challenges tasks, such as improving new business features, refactoring and support legacy code, collect big data under a high-load system. 
-      SOLID and Unit Tests covering (NUnit) are helping me to solve everyday challenges. IoC container allows me to make solutions more flexible. 
-      A code review process is giving me an information regarding improvements in my decision. Daily meetings and retrospectives allowing to keep in touch with a team. 
-      In a development process, I use a scope of technologies: C-Sharp (C# 7), ASP.NET MVC and Web API 2 frameworks, Autofac, NHibernate ORM, message broker RabbitMQ, SQL server 2014/17, Docker, Mercurial, Jira.
+      Addressed diverse technical challenges, including implementing new features, refactoring legacy code, and processing high-volume data in high-load systems.
+      Applied SOLID principles, unit testing (NUnit), and IoC containers to build flexible, maintainable solutions.
+      Worked with C# (C# 7), ASP.NET MVC, Web API 2, Autofac, NHibernate, RabbitMQ, SQL Server 2014/2017, Docker, Mercurial, and Jira.
 
   - company: PreciseQ
     title: Senior Software Engineer
     period: Jan 2016 - Dec 2017, 2 yrs
     location: Kyiv, Ukraine
     description: >
-      My position was senior .NET developer. 
-      I'm involved in developing two projects related with the US real estate. 
-      My general responsibilities are solving issues for the new project version and support the current project. 
-      There are using technologies such as C Sharp (C#), Visual Basic (VB.NET), ASP.NET MVC, Entity Framework, Transact-SQL, Windows Service, Windows Communication Foundation (WCF), Angular, Unit testing (MSTest).
+      Developed and maintained two U.S. real estate–focused applications.
+      Resolved issues for new releases and provided ongoing support for existing systems.
+      Utilized C#, VB.NET, ASP.NET MVC, Entity Framework, T-SQL, WCF, Windows Services, Angular, and MSTest.
 
   - company: NOOSPHERE
     title: Senior Software Engineer
     period: Apr 2017 - Dec 2016, 1 yr 9 mos
     location: Dnipro, Ukraine
     description: >
-      My position was senior ASP.NET developer. 
-      My general responsibilities were optimization performance in ASP.NET MVC application and reports building, front-end architecture improving, and mentoring for junior developers in our team.
-      I was improving experience in C Sharp (C#), ASP.NET MVC, DevExpress, Windows Forms, JavaScript, Backbone. Also, I was getting new experience with MongoDB.
+      Optimized ASP.NET MVC application performance, built reports, improved front-end architecture, and mentored junior developers. 
+      Enhanced skills in C#, ASP.NET MVC, DevExpress, Windows Forms, JavaScript, and Backbone, while gaining experience with MongoDB.
 
 education:
   - institution: Dnipro University of Technology (NTU DP)

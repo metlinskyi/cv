@@ -1,5 +1,4 @@
 #!/bin/bash
-cd src/
 
 # Generate README.md 
 copilot --allow-tool 'write' -p 
@@ -16,6 +15,5 @@ copilot --allow-tool 'write' -p
     wrap new lines into paragraph only for about text
 "  
 # Generate PDF from index.html
-wkhtmltopdf -s A4 index.html '../Roman Metlinskyi CV.pdf'
-cd ..
+wkhtmltopdf -s A4 index.html 'Roman Metlinskyi CV.pdf'
 
