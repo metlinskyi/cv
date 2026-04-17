@@ -15,6 +15,18 @@ about: >
   I leverage modern AI tools like GitHub Copilot to accelerate routine tasks and focus on designing optimal solutions.
 
 experience:
+
+  - company: Self-employed
+    title: Software Architect / Software Engineer / DevOps
+    period: Apr 2024 - Present
+    location: Brno, Czech Republic
+    description: >
+      Developed a cross-platform automation framework implemented in both Python and C++ for game bots and desktop automation across Windows, macOS, and Linux. 
+      Architected an event-driven system using the mediator pattern for loosely coupled component communication, with dependency injection container for service management. 
+      Implemented platform-specific modules for keyboard/mouse simulation, window management, screen capture, and OpenCV-based template matching for image recognition. 
+      Built a declarative YAML-based scripting engine supporting control flow (loops, conditionals, triggers) and variable substitution for configurable automation workflows. 
+      Designed modular architecture with dynamic libraries (C++) and factory pattern for runtime platform selection, enabling code reusability and maintainability across multiple operating systems.
+      
   - company: Barclays
     title: Senior Csharp Developer, AVP
     period: Feb 2021 - Apr 2024, 3 yrs 3 mos
@@ -76,7 +88,7 @@ education:
         period: 2004 - 2005
 
 languages:
-  - English, B2
-  - Czech, B1
+  - English, C1
+  - Czech, B2
   - Ukrainian, Native
   - Russian, Native

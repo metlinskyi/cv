@@ -47,7 +47,7 @@
         }
 
         header.person h1 {
-            font-size: 26pt;
+            font-size: 24pt;
             font-weight: 700;
             margin-bottom: 5px;
             color: #222;
@@ -84,7 +84,7 @@
         }
 
         section {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
         h2 {
@@ -111,7 +111,7 @@
         }
 
         .about {
-            font-size: 10pt;
+            font-size: 9pt;
             line-height: 1.25;
             color: #333;
             text-align: justify;
@@ -135,8 +135,8 @@
         }
 
         ul.experience > li {
-            margin-bottom: 15px;
-            padding-bottom: 15px;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
             border-bottom: 1px solid #eee;
         }
 
@@ -162,7 +162,7 @@
         ul.experience .location {
             font-size: 9pt;
             color: #666;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
         ul.experience .description {
@@ -183,7 +183,7 @@
         }
 
         ul.degrees li {
-            font-size: 10pt;
+            font-size: 9pt;
             color: #555;
             margin-bottom: 3px;
         }
@@ -196,12 +196,12 @@
         }
 
         ul.languages li {
-            font-size: 10pt;
+            font-size: 9pt;
             color: #555;
         }
 
         .hint {
-            font-size: 9pt;
+            font-size: 8pt;
             color: #888;
             font-style: italic;
         }
@@ -220,6 +220,20 @@
             padding-top: 10px;
             border-top: 1px solid #ddd;
             text-align: center;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        a.body{
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            cursor: default !important;
+            text-decoration: none;
+            border: none;
         }
     </style>
 </head>
@@ -250,9 +264,21 @@
             <h2>Recent Experience (5)</h2>
             <ul class="experience">
                 <li>
+                    <h3><span class="title">Solutions Architect / Software Engineer / DevOps</span> at <span class="company">Self-employed</span></h3>
+                    <div class="period">May 2024 - Present</div>
+                    <div class="location">Brno, Czech Republic</div>
+                    <div class="description">
+                        <span class="tech-skill">&bull;&nbsp;</span>Developed a cross-platform automation framework implemented in both <span class="tech-skill">Python</span> and <span class="tech-skill">C++</span> for game bots and desktop automation across <span class="tech-skill">Windows</span>, <span class="tech-skill">macOS</span>, and <span class="tech-skill">Linux</span>.<br> 
+                        <span class="tech-skill">&bull;&nbsp;</span>Architected an event-driven system using the mediator pattern for loosely coupled component communication, with dependency injection container for service management.<br> 
+                        <span class="tech-skill">&bull;&nbsp;</span>Implemented platform-specific modules for keyboard/mouse simulation, window management, screen capture, and <span class="tech-skill">OpenCV</span>-based template matching for image recognition.<br> 
+                        <span class="tech-skill">&bull;&nbsp;</span>Built a declarative <span class="tech-skill">YAML</span>-based scripting engine supporting control flow (loops, conditionals, triggers) and variable substitution for configurable automation workflows.<br> 
+                        <span class="tech-skill">&bull;&nbsp;</span>Designed modular architecture with dynamic libraries (<span class="tech-skill">C++</span>) and factory pattern for runtime platform selection, enabling code reusability and maintainability across multiple operating systems.
+                    </div>
+                </li>
+                <li>
                     <h3><span class="title">Senior Csharp Developer, AVP</span> at <span class="company">Barclays</span></h3>
                     <div class="period">Feb 2021 - Apr 2024, 3 yrs 3 mos</div>
-                    <spa class="location">Prague, Czech Republic</div>
+                    <div class="location">Prague, Czech Republic</div>
                     <div class="description">Contributed to three Barclays projects: Developed an <span class="tech-skill">Excel Add-In</span> (<span class="tech-skill">C#</span>/<span class="tech-skill">VBA</span>) and <span class="tech-skill">WPF</span> app (<span class="tech-skill">C#</span>) for marketing data visualization. Built a <span class="tech-skill">C#</span>, <span class="tech-skill">TypeScript</span>, <span class="tech-skill">Angular</span> web tool for data management, snapshotting, rollback, and recovery.</div>
                 </li>
                 <li>
@@ -272,12 +298,6 @@
                     <div class="period">Jan 2018 - Apr 2019, 1 yr 4 mos</div>
                     <div class="location">Kyiv, Ukraine</div>
                     <div class="description">Addressed diverse technical challenges, including implementing new features, refactoring legacy code, and processing high-volume data in high-load systems. Applied <span class="tech-skill">SOLID principles</span>, unit testing (<span class="tech-skill">NUnit</span>), and <span class="tech-skill">IoC containers</span> to build flexible, maintainable solutions. Worked with <span class="tech-skill">C#</span> (<span class="tech-skill">C# 7</span>), <span class="tech-skill">ASP.NET MVC</span>, <span class="tech-skill">Web API 2</span>, <span class="tech-skill">Autofac</span>, <span class="tech-skill">NHibernate</span>, <span class="tech-skill">RabbitMQ</span>, <span class="tech-skill">SQL Server 2014/2017</span>, <span class="tech-skill">Docker</span>, <span class="tech-skill">Mercurial</span>, and <span class="tech-skill">Jira</span>.</div>
-                </li>
-                <li>
-                    <h3><span class="title">Senior Software Engineer</span> at <span class="company">PreciseQ</span></h3>
-                    <div class="period">Jan 2016 - Dec 2017, 2 yrs</div>
-                    <div class="location">Kyiv, Ukraine</div>
-                    <div class="description">Developed and maintained two U.S. real estate–focused applications. Resolved issues for new releases and provided ongoing support for existing systems. Utilized <span class="tech-skill">C#</span>, <span class="tech-skill">VB.NET</span>, <span class="tech-skill">ASP.NET MVC</span>, <span class="tech-skill">Entity Framework</span>, <span class="tech-skill">T-SQL</span>, <span class="tech-skill">WCF</span>, <span class="tech-skill">Windows Services</span>, <span class="tech-skill">Angular</span>, and <span class="tech-skill">MSTest</span>.</div>
                 </li>
             </ul>
             <footer>
@@ -303,9 +323,9 @@
         <section>
            <h4>Languages</h4>
            <ul class="languages">
-                <li>English B2</li>,&nbsp;&nbsp;
-                <li>Czech B1</li>,&nbsp;&nbsp;
-                <li>Ukrainian Native</li>,&nbsp;&nbsp;
+                <li>English C1,</li>&nbsp;&nbsp;
+                <li>Czech B2,</li>&nbsp;&nbsp;
+                <li>Ukrainian Native,</li>&nbsp;&nbsp;
                 <li>Russian Native</li>
            </ul>
         </section>
