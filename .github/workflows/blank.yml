@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches: [ "main" ]
-    paths: ['Roman Metlinskyi CV.pdf']
+    paths: ['src/data.yaml']
 
   workflow_dispatch:
 
