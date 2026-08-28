@@ -12,7 +12,7 @@ Hello, World! I am a full-stack software engineer specializing in ASP.NET. I hav
 ## Experience
 
 ### Self-employed
-**Software Architect / Software Engineer / DevOps**  
+**Software Architect / Software Engineer**  
 *Apr 2024 - Present*  
 📍 Brno, Czech Republic
 

@@ -74,13 +74,15 @@
         .contact-info label {
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 15px;
+            margin-right: 15px;
         }
 
         .contact-info svg {
             width: 14px;
             height: 14px;
             fill: #555;
+            margin-right: 2px;
         }
 
         section {
@@ -89,10 +91,11 @@
 
         h2 {
             font-size: 14pt;
+            line-height: 24px;
             color: #222;
             margin-bottom: 12px;
             border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
+            padding-bottom: 0px;
         }
 
         h3 {
@@ -154,15 +157,16 @@
         }
 
         ul.experience .period {
-            font-size: 9pt;
+            font-size: 8pt;
             color: #666;
             margin-top: 3px;
         }
 
         ul.experience .location {
-            font-size: 9pt;
+            font-size: 8pt;
             color: #666;
             margin-bottom: 10px;
+            margin-right: 5px;
         }
 
         ul.experience .description {
@@ -170,6 +174,7 @@
             line-height: 1.25;
             color: #333;
             text-align: justify;
+            margin-top: 5px;
         }
 
         ul.education > li {
@@ -198,6 +203,7 @@
         ul.languages li {
             font-size: 9pt;
             color: #555;
+            margin-right: 5px;
         }
 
         .hint {
@@ -235,18 +241,29 @@
             text-decoration: none;
             border: none;
         }
+        #me {
+            position: relative;
+            float: right;
+            margin-bottom: -1px;
+            width: 20px;
+            height: 20px;
+            margin-right: 3px;
+        }
     </style>
 </head>
 <body>
     <main class="cv">
         <header class="person">
-            <h1><span class="givenName">Roman</span><span class="familyName">Metlinskyi</span></h1>
+            <h1>
+                <svg id="me" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="m 8 1 c -1.65625 0 -3 1.34375 -3 3 s 1.34375 3 3 3 s 3 -1.34375 3 -3 s -1.34375 -3 -3 -3 z m -1.5 7 c -2.492188 0 -4.5 2.007812 -4.5 4.5 v 0.5 c 0 1.109375 0.890625 2 2 2 h 8 c 1.109375 0 2 -0.890625 2 -2 v -0.5 c 0 -2.492188 -2.007812 -4.5 -4.5 -4.5 z m 0 0" fill="#2e3436"></path></g></svg>
+                <span class="givenName">Roman</span><span class="familyName">Metlinskyi</span>
+            </h1>
             <div class="jobTitle">Senior Software Engineer</div>
             <div class="contact-info">
                 <label>
                     <svg id="location" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                     <span class="address">Brno, Czech Republic</span>
-                </label>&nbsp;&nbsp;&nbsp;&nbsp;
+                </label>
                 <label>
                     <svg id="email" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                     <span class="email"><a href="mailto:send_your_offers_here@metlinskyi.com">send_your_offers_here@metlinskyi.com</a></span>
@@ -254,55 +271,49 @@
             </div>
         </header>
         <section>
-            <div class="about">
-<p>Hello, World! I am a full-stack software engineer specializing in <span class="tech-skill">ASP.NET</span>.</p>
-<p>I have broad experience across multiple technologies, including <span class="tech-skill">.NET Framework</span>, <span class="tech-skill">.NET Core</span>, <span class="tech-skill">Entity Framework</span>, <span class="tech-skill">SQL</span>/<span class="tech-skill">NoSQL</span>, <span class="tech-skill">JS</span>/<span class="tech-skill">TS</span>, <span class="tech-skill">HTML/CSS</span>, and <span class="tech-skill">Docker</span>. My primary programming language is <span class="tech-skill">C#</span>, and I also enjoy working with <span class="tech-skill">Python</span> and <span class="tech-skill">C++</span>.</p>
-<p>I have strong front-end skills with <span class="tech-skill">JavaScript</span> and <span class="tech-skill">TypeScript</span>, and hands-on experience with frameworks such as <span class="tech-skill">Angular</span> and <span class="tech-skill">React</span>. I leverage modern AI tools like <span class="tech-skill">GitHub Copilot</span> to accelerate routine tasks and focus on designing optimal solutions.</p>
-            </div>
+            <div class="about"><p>A full-stack software engineer specializing in ASP.NET.</p><p>Broad experience across multiple technologies, including .NET Framework, .NET Core, Entity Framework, SQL/NoSQL, JS/TS, HTML/CSS, and Docker. C# is the primary programming language, with additional experience and interest in Python and C++.</p><p>Strong front-end skills in JavaScript and TypeScript, with hands-on experience using frameworks such as Angular and React.</p><p>Modern AI tools like GitHub Copilot and Cursor are leveraged to accelerate routine tasks and focus more on designing optimal solutions.</p></div>
         </section>
         <section>
             <h2>Recent Experience (5)</h2>
             <ul class="experience">
                 <li>
-                    <h3><span class="title">Solutions Architect / Software Engineer / DevOps</span> at <span class="company">Self-employed</span></h3>
-                    <div class="period">May 2024 - Present</div>
-                    <div class="location">Brno, Czech Republic</div>
-                    <div class="description">
-                        <span class="tech-skill">&bull;&nbsp;</span>Developed a cross-platform automation framework implemented in both <span class="tech-skill">Python</span> and <span class="tech-skill">C++</span> for game bots and desktop automation across <span class="tech-skill">Windows</span>, <span class="tech-skill">macOS</span>, and <span class="tech-skill">Linux</span>.<br> 
-                        <span class="tech-skill">&bull;&nbsp;</span>Architected an event-driven system using the mediator pattern for loosely coupled component communication, with dependency injection container for service management.<br> 
-                        <span class="tech-skill">&bull;&nbsp;</span>Implemented platform-specific modules for keyboard/mouse simulation, window management, screen capture, and <span class="tech-skill">OpenCV</span>-based template matching for image recognition.<br> 
-                        <span class="tech-skill">&bull;&nbsp;</span>Built a declarative <span class="tech-skill">YAML</span>-based scripting engine supporting control flow (loops, conditionals, triggers) and variable substitution for configurable automation workflows.<br> 
-                        <span class="tech-skill">&bull;&nbsp;</span>Designed modular architecture with dynamic libraries (<span class="tech-skill">C++</span>) and factory pattern for runtime platform selection, enabling code reusability and maintainability across multiple operating systems.
-                    </div>
+                    <h3><span class="title">Software Architect / Software Engineer</span> at <span class="company">Self-employed</span></h3>   
+                    <div><span class="location">Brno, Czech Republic,</span><span class="period">Apr 2024 - Present</span></div>                
+                    <div class="description">Developed a cross-platform automation framework implemented in both Python and C++ for game bots and desktop automation across Windows, macOS, and Linux.  Architected an event-driven system using the mediator pattern for loosely coupled component communication, with dependency injection container for service management.  Implemented platform-specific modules for keyboard/mouse simulation, window management, screen capture, and OpenCV-based template matching for image recognition.  Built a declarative YAML-based scripting engine supporting control flow (loops, conditionals, triggers) and variable substitution for configurable automation workflows.  Designed modular architecture with dynamic libraries (C++) and factory pattern for runtime platform selection, enabling code reusability and maintainability across multiple operating systems.
+</div>
                 </li>
+            
                 <li>
-                    <h3><span class="title">Senior Csharp Developer, AVP</span> at <span class="company">Barclays</span></h3>
-                    <div class="period">Feb 2021 - Apr 2024, 3 yrs 3 mos</div>
-                    <div class="location">Prague, Czech Republic</div>
-                    <div class="description">Contributed to three Barclays projects: Developed an <span class="tech-skill">Excel Add-In</span> (<span class="tech-skill">C#</span>/<span class="tech-skill">VBA</span>) and <span class="tech-skill">WPF</span> app (<span class="tech-skill">C#</span>) for marketing data visualization. Built an <span class="tech-skill">ASP.NET</span>, <span class="tech-skill">C#</span>, <span class="tech-skill">TypeScript</span>, <span class="tech-skill">Angular</span> web tool for data management, snapshotting, rollback, and recovery.</div>
+                    <h3><span class="title">Senior Csharp Developer, AVP</span> at <span class="company">Barclays</span></h3>   
+                    <div><span class="location">Prague, Czech Republic,</span><span class="period">Feb 2021 - Apr 2024</span></div>                
+                    <div class="description">Contributed to three Barclays projects: Developed an Excel Add-In (C#/VBA) and WPF desktop application (C#) for marketing data visualization. Built a C#, TypeScript, Angular web tool for data management, snapshotting, rollback, and recovery market data.
+</div>
                 </li>
+            
                 <li>
-                    <h3><span class="title">Senior Analyst Developer</span> at <span class="company">FNZ Group</span></h3>
-                    <div class="period">Nov 2019 - Jan 2021, 1 yr 3 mos</div>
-                    <div class="location">Brno, Czech Republic</div>
-                    <div class="description">As an Analyst Developer, I led system analysis, database design (<span class="tech-skill">MS SQL</span>), and the development of complex financial business logic, delivering modern web applications using <span class="tech-skill">C#</span>/<span class="tech-skill">VB</span>, <span class="tech-skill">ASP.NET MVC</span>, and <span class="tech-skill">React</span>. I partnered closely with QA analysts and cross-functional teams to produce world-class software solutions.</div>
+                    <h3><span class="title">Senior Analyst Developer</span> at <span class="company">FNZ Group</span></h3>   
+                    <div><span class="location">Brno, Czech Republic,</span><span class="period">Nov 2019 - Jan 2021</span></div>                
+                    <div class="description">As an Analyst Developer, I led system analysis, database design (MS SQL), and the development of complex financial business logic, delivering modern web applications using C#/VB, ASP.NET MVC, and React.  I partnered closely with QA analysts and cross-functional teams to produce world-class software solutions.
+</div>
                 </li>
+            
                 <li>
-                    <h3><span class="title">Team Lead</span> at <span class="company">SoftServe</span></h3>
-                    <div class="period">May 2019 - Dec 2019, 8 mos</div>
-                    <div class="location">Kyiv, Ukraine</div>
-                    <div class="description">Built a completely new development team to improve the performance of the e-commerce <span class="tech-skill">ASP.NET Web Forms</span> application for Henry Schein, the largest medical supplier in the United States. Led the development process using an incentive-driven management approach. During this short period, the team significantly improved UI performance and resolved critical security issues. The initiative was successful; however, collaboration with Henry Schein was paused due to the COVID-19 pandemic.</div>
+                    <h3><span class="title">Team Lead</span> at <span class="company">SoftServe</span></h3>   
+                    <div><span class="location">Kyiv, Ukraine,</span><span class="period">May 2019 - Dec 2019</span></div>                
+                    <div class="description">Built a completely new development team to improve the performance of the e-commerce ASP.NET Web Forms application for Henry Schein, the largest medical supplier in the United States.  Led the development process using an incentive-driven management approach. During this short period, the team significantly improved UI performance and resolved critical security issues.  The initiative was successful; however, collaboration with Henry Schein was paused due to the COVID-19 pandemic.
+</div>
                 </li>
+            
                 <li>
-                    <h3><span class="title">Senior Software Engineer</span> at <span class="company">Moneyveo</span></h3>
-                    <div class="period">Jan 2018 - Apr 2019, 1 yr 4 mos</div>
-                    <div class="location">Kyiv, Ukraine</div>
-                    <div class="description">Addressed diverse technical challenges, including implementing new features, refactoring legacy code, and processing high-volume data in high-load systems. Applied <span class="tech-skill">SOLID principles</span>, unit testing (<span class="tech-skill">NUnit</span>), and <span class="tech-skill">IoC containers</span> to build flexible, maintainable solutions. Worked with <span class="tech-skill">C#</span> (<span class="tech-skill">C# 7</span>), <span class="tech-skill">ASP.NET MVC</span>, <span class="tech-skill">Web API 2</span>, <span class="tech-skill">Autofac</span>, <span class="tech-skill">NHibernate</span>, <span class="tech-skill">RabbitMQ</span>, <span class="tech-skill">SQL Server 2014/2017</span>, <span class="tech-skill">Docker</span>, <span class="tech-skill">Mercurial</span>, and <span class="tech-skill">Jira</span>.</div>
+                    <h3><span class="title">Senior Software Engineer</span> at <span class="company">Moneyveo</span></h3>   
+                    <div><span class="location">Kyiv, Ukraine,</span><span class="period">Jan 2018 - Apr 2019</span></div>                
+                    <div class="description">Addressed diverse technical challenges, including implementing new features, refactoring legacy code, and processing high-volume data in high-load systems. Applied SOLID principles, unit testing (NUnit), and IoC containers to build flexible, maintainable solutions. Worked with C# (C# 7), ASP.NET MVC, Web API 2, Autofac, NHibernate, RabbitMQ, SQL Server 2014/2017, Docker, Mercurial, and Jira.
+</div>
                 </li>
             </ul>
-            <footer>
-                <span class="hint">You can find my other experience on my LinkedIn profile <a href="https://www.linkedin.com/in/metlinskyi" class="urls">linkedin.com/in/metlinskyi</a></span>
-            </footer>
+            <div>
+                <span class="hint">You could find my other experience on my LinkedIn profile <a href="https://www.linkedin.com/in/metlinskyi" class="urls">https://www.linkedin.com/in/metlinskyi</a><span>
+            </div>
         </section>
         <section>
             <h2>Education</h2>
@@ -311,10 +322,11 @@
                     <h3 class="institution">Dnipro University of Technology (NTU DP)</h3>
                     <ul class="degrees">
                         <li>
-                            <span class="name">Bachelor's degree in Computer Science</span>, <span class="period">2000 - 2004</span>
+                            <span class="name">Bachelor&#x27;s degree in Computer Science</span>, <span class="period">2000 - 2004</span>
                         </li>
+                    
                         <li>
-                            <span class="name">Master's program (not completed)</span>, <span class="period">2004 - 2005</span>
+                            <span class="name">Master&#x27;s program (not completed)</span>, <span class="period">2004 - 2005</span>
                         </li>
                     </ul>
                 </li>
@@ -323,10 +335,13 @@
         <section>
            <h4>Languages</h4>
            <ul class="languages">
-                <li>English C1,</li>&nbsp;&nbsp;
-                <li>Czech B2,</li>&nbsp;&nbsp;
-                <li>Ukrainian Native,</li>&nbsp;&nbsp;
-                <li>Russian Native</li>
+                <li>English B2,</li>
+           
+                <li>Czech B1,</li>
+           
+                <li>Ukrainian Native,</li>
+           
+                <li>Russian Native,</li>
            </ul>
         </section>
     </main>

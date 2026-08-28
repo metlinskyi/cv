@@ -8,16 +8,16 @@ person:
     github:   https://github.com/metlinskyi
     linkedin: https://www.linkedin.com/in/metlinskyi
 
-about: >
-  Hello, World! I am a full-stack software engineer specializing in ASP.NET. 
-  I have broad experience across multiple technologies, including .NET Framework, .NET Core, SQL/NoSQL, JS/TS, HTML/CSS, and Docker. My primary programming language is C#, and I also enjoy working with Python and C++.
-  I have strong front-end skills with JavaScript and TypeScript, and hands-on experience with frameworks such as Angular and React. 
-  I leverage modern AI tools like GitHub Copilot to accelerate routine tasks and focus on designing optimal solutions.
+about: |
+  A full-stack software engineer specializing in ASP.NET. 
+  Broad experience across multiple technologies, including .NET Framework, .NET Core, Entity Framework, SQL/NoSQL, JS/TS, HTML/CSS, and Docker. C# is the primary programming language, with additional experience and interest in Python and C++.
+  Strong front-end skills in JavaScript and TypeScript, with hands-on experience using frameworks such as Angular and React.
+  Modern AI tools like GitHub Copilot and Cursor are leveraged to accelerate routine tasks and focus more on designing optimal solutions.
 
 experience:
 
   - company: Self-employed
-    title: Software Architect / Software Engineer / DevOps
+    title: Software Architect / Software Engineer
     period: Apr 2024 - Present
     location: Brno, Czech Republic
     description: >
@@ -29,16 +29,16 @@ experience:
       
   - company: Barclays
     title: Senior Csharp Developer, AVP
-    period: Feb 2021 - Apr 2024, 3 yrs 3 mos
+    period: Feb 2021 - Apr 2024
     location: Prague, Czech Republic
     description: >
       Contributed to three Barclays projects:
-      Developed an Excel Add-In (C#/VBA) and WPF app (C#) for marketing data visualization.
-      Built a C#, TypeScript, Angular web tool for data management, snapshotting, rollback, and recovery.
+      Developed an Excel Add-In (C#/VBA) and WPF desktop application (C#) for marketing data visualization.
+      Built a C#, TypeScript, Angular web tool for data management, snapshotting, rollback, and recovery market data.
 
   - company: FNZ Group
     title: Senior Analyst Developer
-    period: Nov 2019 - Jan 2021, 1 yr 3 mos
+    period: Nov 2019 - Jan 2021
     location: Brno, Czech Republic
     description: >
       As an Analyst Developer, I led system analysis, database design (MS SQL), and the development of complex financial business logic, delivering modern web applications using C#/VB, ASP.NET MVC, and React. 
@@ -46,7 +46,7 @@ experience:
  
   - company: SoftServe
     title: Team Lead
-    period: May 2019 - Dec 2019, 8 mos
+    period: May 2019 - Dec 2019
     location: Kyiv, Ukraine
     description: >
       Built a completely new development team to improve the performance of the e-commerce ASP.NET Web Forms application for Henry Schein, the largest medical supplier in the United States. 
@@ -55,7 +55,7 @@ experience:
 
   - company: Moneyveo
     title: Senior Software Engineer
-    period: Jan 2018 - Apr 2019, 1 yr 4 mos
+    period: Jan 2018 - Apr 2019
     location: Kyiv, Ukraine
     description: >
       Addressed diverse technical challenges, including implementing new features, refactoring legacy code, and processing high-volume data in high-load systems.
@@ -64,7 +64,7 @@ experience:
 
   - company: PreciseQ
     title: Senior Software Engineer
-    period: Jan 2016 - Dec 2017, 2 yrs
+    period: Jan 2016 - Dec 2017
     location: Kyiv, Ukraine
     description: >
       Developed and maintained two U.S. real estate–focused applications.
@@ -73,7 +73,7 @@ experience:
 
   - company: NOOSPHERE
     title: Senior Software Engineer
-    period: Apr 2017 - Dec 2016, 1 yr 9 mos
+    period: Apr 2017 - Dec 2016
     location: Dnipro, Ukraine
     description: >
       Optimized ASP.NET MVC application performance, built reports, improved front-end architecture, and mentored junior developers. 
@@ -88,7 +88,7 @@ education:
         period: 2004 - 2005
 
 languages:
-  - English, C1
-  - Czech, B2
-  - Ukrainian, Native
-  - Russian, Native
+  - English B2
+  - Czech B1
+  - Ukrainian Native
+  - Russian Native
