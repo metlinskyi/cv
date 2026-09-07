@@ -17,7 +17,7 @@ about: |
 experience:
 
   - company: Self-employed
-    title: Software Architect / Software Engineer
+    title: Senior Software Engineer
     period: Apr 2024 - Present
     location: Brno, Czech Republic
     description: >
@@ -26,9 +26,10 @@ experience:
       Implemented platform-specific modules for keyboard/mouse simulation, window management, screen capture, and OpenCV-based template matching for image recognition. 
       Built a declarative YAML-based scripting engine supporting control flow (loops, conditionals, triggers) and variable substitution for configurable automation workflows. 
       Designed modular architecture with dynamic libraries (C++) and factory pattern for runtime platform selection, enabling code reusability and maintainability across multiple operating systems.
+      Payment preprocessing and reporting tools were developed using C# and .NET Core, Native AOT, gRPC.
       
   - company: Barclays
-    title: Senior Csharp Developer, AVP
+    title: Senior Csharp Developer
     period: Feb 2021 - Apr 2024
     location: Prague, Czech Republic
     description: >
