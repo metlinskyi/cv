@@ -37,7 +37,7 @@ jobs:
         run: |
           git config user.name "GitHub[bot]"
           git config user.email "github@metlinskyi.com"
-          git add index.html 'Roman Metlinskyi CV.pdf'
+          git add index.html 'Roman Metlinskyi CV.pdf' README.md
           if git diff --cached --quiet; then
             echo "Generated files are already up to date."
             exit 0
