@@ -152,7 +152,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--template", type=Path, default=Path(__file__).with_name("template.html"))
     parser.add_argument("--data", type=Path, default=Path(__file__).with_name("data.yaml"))
-    parser.add_argument("--output", type=Path, default=Path(__file__).parent.parent / "index.html")
+    parser.add_argument("--output", type=Path, default=Path(__file__).parent.parent / "output.html")
     args = parser.parse_args()
     generate(args.template, args.data, args.output)
 

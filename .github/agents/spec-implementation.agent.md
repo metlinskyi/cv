@@ -2,11 +2,15 @@
 name: Spec Implementation
 description: Implements software requirements defined in a *.spec.md file.
 argument-hint: Path to the *.spec.md file
-tools:
-  - read
-  - edit
-  - search
-  - execute
+tools: [
+  execute, 
+  read, 
+  ms-python.python/getPythonEnvironmentInfo, 
+  ms-python.python/getPythonExecutableCommand, 
+  ms-python.python/installPythonPackage, 
+  ms-python.python/configurePythonEnvironment, 
+  edit, 
+  search]
 ---
 
 # Spec Implementation Agent
