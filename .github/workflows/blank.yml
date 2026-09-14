@@ -3,7 +3,10 @@ name: CI
 on:
   push:
     branches: [ "main" ]
-    paths: ['src/data.yaml']
+    paths:
+      - '.github/workflows/blank.yml'
+      - 'requirements.txt'
+      - 'src/**'
 
   workflow_dispatch:
 
@@ -25,16 +28,10 @@ jobs:
         run: python -m pip install -r requirements.txt
 
       - name: Install wkhtmltopdf
-        run: sudo apt-get install wkhtmltopdf
+        run: sudo apt-get update && sudo apt-get install -y wkhtmltopdf
 
-      - name: Generate index.html
-        run: python src/generate_pdf.py
-
-      - name: Generate README.md
-        run: python src/generate_md.py
-
-      - name: Generate PDF
-        run: wkhtmltopdf -s A4 index.html 'Roman Metlinskyi CV.pdf'
+      - name: Generate CV files
+        run: ./src/generate.sh
 
       - name: Commit generated files
         run: |
