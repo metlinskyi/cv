@@ -81,6 +81,8 @@ Optimized ASP.NET MVC application performance, built reports, improved front-end
 ## Education
 
 ### Dnipro University of Technology (NTU DP)
-- **name**, *period*
+- **Bachelor's degree in Computer Science**, *2000 - 2004*
+- **Master's program (not completed)**, *2004 - 2005*
 
 ## Languages
+- English C1, - Czech B1, - Ukrainian Native, - Russian Native, 

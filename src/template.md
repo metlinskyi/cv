@@ -21,6 +21,7 @@
 ## Education
 
 ### {institution}
-- **name**, *period*
+- **{name}**, *{period}*
 
 ## Languages
+- {language}, 
