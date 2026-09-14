@@ -81,4 +81,4 @@ Optimized ASP.NET MVC application performance, built reports, improved front-end
 
 
 ## Languages
-English C1, Czech B1, Ukrainian Native, Russian Native, 
+English B1, Czech B1, Ukrainian Native, Russian Native, 
