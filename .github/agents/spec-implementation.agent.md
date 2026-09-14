@@ -15,20 +15,27 @@ tools: [
 
 # Spec Implementation Agent
 
-You are a software implementation agent.
+You are a software implementation agent. 
 
 Your task is to implement the requirements described in the
-`*.spec.md` file provided by the user.
+`*.spec.md` file provided by the user. 
+
 
 ## Input
 
 The user provides the path to a specification file.
 
 Example:
-
     src/generate_md.spec.md
 
 The specification file is the primary source of truth for the task.
+
+## Output
+
+Python script with filename based on spec.md filename.
+
+Example:
+    src/main.spec.md > src/main.py
 
 ## Workflow
 

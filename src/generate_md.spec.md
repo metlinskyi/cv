@@ -1,14 +1,14 @@
 #   Task
-    Implement a Python script that generates README.md based on:
-    - Target file: src/generate_md.py
+    Implement a generator Markdown file based on:
     - Template: src/template.md
     - Data: src/data.yaml
-    - Output: README.md
+    - Output: output.md
     - Requirements:
       - load input files
       - read src/template.md as the Markdown template.
       - read src/data.yaml as the source data.
       - field replacement
+      - target file: src/generate_md.py
 
 ##  Replace placeholders using the format:
     {<field_name>}
@@ -66,7 +66,7 @@
       C#, Python, TypeScript
 
 ##  Output
-    Write the generated Markdown to README.md.
+    Write the generated Markdown to output.md.
     Preserve the original Markdown structure and formatting as much as reasonably possible.
 
 ##  Implementation considerations

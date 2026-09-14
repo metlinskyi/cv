@@ -1,15 +1,15 @@
 #   Task
-    Implement a Python script that generates index.html from:
-    - Target file: src/generate_pdf.py
+    Implement a generator of HTML file from:
     - Template: src/template.html
     - Data: src/data.yaml
-    - Output: index.html
+    - Output: output.html
     - Requirements:
         - load input files
         - read src/template.html as the HTML template.
         - read src/data.yaml as the source data.
         - field replacement
-
+        - target file: src/generate_pdf.py
+        
 ##  Replace template placeholders using the format:
     {<field_name>}
     <field_name> corresponds to a field/key from data.yaml.
