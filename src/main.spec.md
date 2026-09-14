@@ -94,8 +94,7 @@
 
     Equivalent operation:
 
-    from g
-    enerate_md import generate
+    from generate_md import generate
 
     generate(
         template="src/template.md",
