@@ -2,9 +2,18 @@
 
 set -e
 
-python3 "$(dirname "$0")/main.py" md --template src/template.md --data src/data.yaml --output README.md 
-python3 "$(dirname "$0")/main.py" html --template src/template.html --data src/data.yaml --output index.html
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 
-# Generate PDF from index.html
-wkhtmltopdf -s A4 index.html 'Roman Metlinskyi CV.pdf'
+cd "$REPO_ROOT"
+
+python3 "$SCRIPT_DIR/main.py" md --template "$SCRIPT_DIR/template.md" --data "$SCRIPT_DIR/data.yaml" --output "$REPO_ROOT/README.md"
+python3 "$SCRIPT_DIR/main.py" html --template "$SCRIPT_DIR/template.html" --data "$SCRIPT_DIR/data.yaml" --output "$REPO_ROOT/index.html"
+
+# Generate PDF from index.html when wkhtmltopdf is available.
+if command -v wkhtmltopdf >/dev/null 2>&1; then
+  wkhtmltopdf -s A4 "$REPO_ROOT/index.html" "$REPO_ROOT/Roman Metlinskyi CV.pdf"
+else
+  echo "wkhtmltopdf not installed; skipping PDF generation." >&2
+fi
 

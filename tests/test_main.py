@@ -1,5 +1,6 @@
 import importlib.util
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -34,6 +35,20 @@ class MainCliTests(unittest.TestCase):
             output_path = ROOT / "c.txt"
             if output_path.exists():
                 output_path.unlink()
+
+    def test_generators_accept_string_paths_via_keyword_arguments(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            temp_path = Path(temp_dir)
+            template = temp_path / "template.md"
+            data = temp_path / "data.yaml"
+            output = temp_path / "README.md"
+            template.write_text("# {name}\n", encoding="utf-8")
+            data.write_text("name: Ada\n", encoding="utf-8")
+
+            from src.generate_md import generate as generate_md
+            generate_md(template=str(template), data=str(data), output=str(output))
+
+            self.assertEqual("# Ada\n", output.read_text(encoding="utf-8"))
 
     def test_main_rejects_missing_generator(self):
         with self.assertRaises(SystemExit):

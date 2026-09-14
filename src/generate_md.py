@@ -127,10 +127,14 @@ def render_collections(template: str, context: list[Any], data: dict[str, Any]) 
     return render_template(template, context, data)
 
 
-def generate(template_path: Path, data_path: Path, output_path: Path) -> None:
-    data = load_yaml(data_path)
-    template = template_path.read_text(encoding="utf-8")
-    rendered = render_collections(template, [data], data)
+def generate(template: str | Path, data: str | Path, output: str | Path) -> None:
+    template_path = Path(template)
+    data_path = Path(data)
+    output_path = Path(output)
+
+    data_dict = load_yaml(data_path)
+    template_text = template_path.read_text(encoding="utf-8")
+    rendered = render_collections(template_text, [data_dict], data_dict)
     output_path.write_text(rendered, encoding="utf-8")
 
 

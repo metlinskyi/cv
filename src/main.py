@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import importlib.util
+import sys
 from pathlib import Path
 from typing import Any
 
@@ -21,6 +22,7 @@ def load_generator(generator_type: str) -> Any:
         raise ImportError(f"Unable to load generator module: {module_name}")
 
     module = importlib.util.module_from_spec(spec)
+    sys.modules[module_name] = module
     spec.loader.exec_module(module)
 
     generator = getattr(module, "generate", None)

@@ -139,13 +139,17 @@ def render(node: Node, context: list[Any], data: dict[str, Any]) -> str:
     return replace_fields(node.start_tag, context, data) + rendered_children + node.end_tag
 
 
-def generate(template_path: Path, data_path: Path, output_path: Path) -> None:
-    data = yaml.safe_load(data_path.read_text(encoding="utf-8")) or {}
-    data["n"] = data.get("n", 5)
-    template = template_path.read_text(encoding="utf-8")
+def generate(template: str | Path, data: str | Path, output: str | Path) -> None:
+    template_path = Path(template)
+    data_path = Path(data)
+    output_path = Path(output)
+
+    data_dict = yaml.safe_load(data_path.read_text(encoding="utf-8")) or {}
+    data_dict["n"] = data_dict.get("n", 5)
+    template_text = template_path.read_text(encoding="utf-8")
     parser = TemplateParser()
-    parser.feed(template)
-    output_path.write_text("".join(render(node, [data], data) for node in parser.root.children), encoding="utf-8")
+    parser.feed(template_text)
+    output_path.write_text("".join(render(node, [data_dict], data_dict) for node in parser.root.children), encoding="utf-8")
 
 
 def main() -> None:
