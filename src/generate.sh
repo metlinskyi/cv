@@ -2,6 +2,7 @@
 
 set -e
 
+python3 "$(dirname "$0")/generate_md.py"
 python3 "$(dirname "$0")/generate_pdf.py"
 
 # Generate PDF from index.html

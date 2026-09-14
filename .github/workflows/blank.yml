@@ -28,7 +28,10 @@ jobs:
         run: sudo apt-get install wkhtmltopdf
 
       - name: Generate index.html
-        run: python src/generate.py
+        run: python src/generate_pdf.py
+
+      - name: Generate README.md
+        run: python src/generate_md.py
 
       - name: Generate PDF
         run: wkhtmltopdf -s A4 index.html 'Roman Metlinskyi CV.pdf'
