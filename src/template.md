@@ -24,6 +24,5 @@
 {degrees:}- **{name}**, *{period}*
 {;}
 {;}
-
 ## Languages
 {languages:}{*}, {;}
