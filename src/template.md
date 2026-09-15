@@ -18,6 +18,8 @@
 {description}
 {;}
 
+> You could find my other experience on my LinkedIn profile [{linkedin}]({linkedin})
+
 ## Education
 {education:}
 ### {institution}
