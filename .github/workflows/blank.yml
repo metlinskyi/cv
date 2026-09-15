@@ -34,7 +34,7 @@ jobs:
 
       - name: Commit generated files
         run: |
-          git config user.name "GitHub[bot]"
+          git config user.name "GitHub[CI]"
           git config user.email "github@metlinskyi.com"
           git add index.html 'Roman Metlinskyi CV.pdf' README.md
           if git diff --cached --quiet; then
