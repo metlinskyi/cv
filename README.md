@@ -41,7 +41,7 @@ As an Analyst Developer, I led system analysis, database design (MS SQL), and th
 
 ### SoftServe
 **Team Lead**  
-*May 2019 - Dec 2019*  
+*May 2019 - Jan 2020*  
 📍 Kyiv, Ukraine
 
 Built a completely new development team to improve the performance of the e-commerce ASP.NET Web Forms application for Henry Schein, the largest medical supplier in the United States. Led the development process using an incentive-driven management approach. During this short period, the team significantly improved UI performance and resolved critical security issues. The initiative was successful; however, collaboration with Henry Schein was paused due to the COVID-19 pandemic.
@@ -65,7 +65,7 @@ Developed and maintained two U.S. real estate-focused applications. Resolved iss
 
 ### NOOSPHERE
 **Senior Software Engineer**  
-*Apr 2017 - Dec 2016*  
+*Jan 2014 - Dec 2015*  
 📍 Dnipro, Ukraine
 
 Optimized ASP.NET MVC application performance, built reports, improved front-end architecture, and mentored junior developers. Enhanced skills in C#, ASP.NET MVC, DevExpress UI components, Windows Forms, JavaScript, and Backbone, while gaining experience with MongoDB.
