@@ -79,6 +79,5 @@ Optimized ASP.NET MVC application performance, built reports, improved front-end
 - **Master's program (not completed)**, *2004 - 2005*
 
 
-
 ## Languages
 English B1, Czech B1, Ukrainian Native, Russian Native, 
