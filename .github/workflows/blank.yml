@@ -4,9 +4,8 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - '.github/workflows/blank.yml'
-      - 'requirements.txt'
-      - 'src/**'
+      - 'src/data.yaml'
+      - 'src/template*'
 
   workflow_dispatch:
 
