@@ -21,7 +21,7 @@
 ## Education
 {education:}
 ### {institution}
-{degrees:}- **{name}**, *{period}*
+{degrees:}- {name}, *{period}*
 {;}
 {;}
 ## Languages
