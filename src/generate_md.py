@@ -3,7 +3,6 @@
 
 from __future__ import annotations
 
-import argparse
 import re
 from pathlib import Path
 from typing import Any
@@ -136,16 +135,3 @@ def generate(template: str | Path, data: str | Path, output: str | Path) -> None
     template_text = template_path.read_text(encoding="utf-8")
     rendered = render_collections(template_text, [data_dict], data_dict)
     output_path.write_text(rendered, encoding="utf-8")
-
-
-def main() -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--template", type=Path, default=Path(__file__).with_name("template.md"))
-    parser.add_argument("--data", type=Path, default=Path(__file__).with_name("data.yaml"))
-    parser.add_argument("--output", type=Path, default=Path(__file__).parent.parent / "output.md")
-    args = parser.parse_args()
-    generate(args.template, args.data, args.output)
-
-
-if __name__ == "__main__":
-    main()

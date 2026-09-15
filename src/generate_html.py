@@ -3,7 +3,6 @@
 
 from __future__ import annotations
 
-import argparse
 import html
 import re
 from dataclasses import dataclass, field
@@ -150,16 +149,3 @@ def generate(template: str | Path, data: str | Path, output: str | Path) -> None
     parser = TemplateParser()
     parser.feed(template_text)
     output_path.write_text("".join(render(node, [data_dict], data_dict) for node in parser.root.children), encoding="utf-8")
-
-
-def main() -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--template", type=Path, default=Path(__file__).with_name("template.html"))
-    parser.add_argument("--data", type=Path, default=Path(__file__).with_name("data.yaml"))
-    parser.add_argument("--output", type=Path, default=Path(__file__).parent.parent / "output.html")
-    args = parser.parse_args()
-    generate(args.template, args.data, args.output)
-
-
-if __name__ == "__main__":
-    main()
