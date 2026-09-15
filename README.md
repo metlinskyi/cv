@@ -72,6 +72,8 @@ Optimized ASP.NET MVC application performance, built reports, improved front-end
 
 
 
+> You could find my other experience on my LinkedIn profile [https://www.linkedin.com/in/metlinskyi](https://www.linkedin.com/in/metlinskyi)
+
 ## Education
 
 ### Dnipro University of Technology (NTU DP)
