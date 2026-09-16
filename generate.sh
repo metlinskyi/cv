@@ -7,8 +7,8 @@ REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 
 cd "$REPO_ROOT"
 
-python3 "$SCRIPT_DIR/main.py" md --template "$SCRIPT_DIR/template.md" --data "$SCRIPT_DIR/data.yaml" --output "$REPO_ROOT/README.md"
-python3 "$SCRIPT_DIR/main.py" html --template "$SCRIPT_DIR/template.html" --data "$SCRIPT_DIR/data.yaml" --output "$REPO_ROOT/index.html"
+python3 "$SCRIPT_DIR/generate.py" md --template "$SCRIPT_DIR/template.md" --data "$SCRIPT_DIR/data.yaml" --output "$REPO_ROOT/README.md"
+python3 "$SCRIPT_DIR/generate.py" html --template "$SCRIPT_DIR/template.html" --data "$SCRIPT_DIR/data.yaml" --output "$REPO_ROOT/index.html"
 
 # Generate PDF from index.html when wkhtmltopdf is available.
 if command -v wkhtmltopdf >/dev/null 2>&1; then
