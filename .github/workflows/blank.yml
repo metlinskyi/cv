@@ -30,7 +30,7 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y wkhtmltopdf
 
       - name: Generate CV files
-        run: ./generate.sh
+        run: ./src/generate.sh
 
       - name: Commit generated files
         run: |
